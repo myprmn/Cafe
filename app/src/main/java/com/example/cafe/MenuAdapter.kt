@@ -25,6 +25,8 @@ class MenuAdapter (
         holder.view.tvDesc.text = result.deskripsi
         holder.view.tvHarga.text = "Rp. ${result.harga.toString()}"
 
+        // iuhijhijihiuhohoioijhoiji
+
         Glide.with(holder.view)
             .load(result.image)
             .placeholder(R.drawable.resto)
