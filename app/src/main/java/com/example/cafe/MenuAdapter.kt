@@ -12,8 +12,6 @@ class MenuAdapter (
     val listener: OnAdapterListener):
     RecyclerView.Adapter<MenuAdapter.MyViewHolder>(){
 
-
-
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int)= MyViewHolder (
         LayoutInflater.from(parent.context).inflate(R.layout.list_menu,parent,false)
     )
@@ -24,8 +22,6 @@ class MenuAdapter (
         holder.view.tvNama.text = result.nama
         holder.view.tvDesc.text = result.deskripsi
         holder.view.tvHarga.text = "Rp. ${result.harga.toString()}"
-
-        // iuhijhijihiuhohoioijhoiji
 
         Glide.with(holder.view)
             .load(result.image)
@@ -43,4 +39,9 @@ class MenuAdapter (
         fun onClick(result: MenuModel.Result)
     }
 
+    fun setData(data: List<MenuModel.Result>){
+        this.results.clear()
+        this.results.addAll(data)
+        notifyDataSetChanged()
     }
+}
