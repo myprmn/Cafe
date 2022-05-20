@@ -1,12 +1,14 @@
 package com.example.cafe
 
 import android.content.Context
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.Toast
 import androidx.recyclerview.widget.LinearLayoutManager
 import kotlinx.android.synthetic.main.activity_main.*
+import kotlinx.android.synthetic.main.list_menu.*
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
@@ -27,8 +29,14 @@ class MainActivity : AppCompatActivity() {
         menuAdapter =  MenuAdapter(arrayListOf(),object:
         MenuAdapter.OnAdapterListener{
             override fun onClick(result: MenuModel.Result) {
-                Toast.makeText(applicationContext,result.nama,
-                Toast.LENGTH_SHORT).show()
+                startActivity(
+                    Intent(this@MainActivity, OrderActivity::class.java)
+                        .putExtra("intent_id", result.id.toString())
+                        .putExtra("intent_image", result.image)
+                        .putExtra("intent_nama", result.nama)
+                        .putExtra("intent_harga", "Rp. ${result.harga.toString()}")
+                )
+                //Toast.makeText(applicationContext,result.nama, Toast.LENGTH_SHORT).show()
             }
         })
         rvMenu.apply {
