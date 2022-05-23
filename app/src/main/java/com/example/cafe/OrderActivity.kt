@@ -1,13 +1,17 @@
 package com.example.cafe
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import android.widget.Adapter
 import android.widget.EditText
 import android.widget.TextView
 import android.widget.Toast
+import androidx.recyclerview.widget.LinearLayoutManager
 import com.bumptech.glide.Glide
 import kotlinx.android.synthetic.main.activity_order.*
+import kotlinx.android.synthetic.main.activity_view_cart.*
 import kotlinx.android.synthetic.main.list_menu.view.*
 import retrofit2.Call
 import retrofit2.Callback
@@ -22,13 +26,13 @@ class OrderActivity : AppCompatActivity() {
     private lateinit var nomorMeja: EditText
     private lateinit var menuId : TextView
     private lateinit var jmlOrder : EditText
+    private lateinit var cartAdapter: CartAdapter
 
     private fun initComponent(){
         nomorMeja = findViewById(R.id.etNomorMeja)
         menuId = findViewById(R.id.tvId)
         jmlOrder = findViewById(R.id.etJmlOrder)
     }
-
 
         override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -56,9 +60,14 @@ class OrderActivity : AppCompatActivity() {
         tvNamaMenu.text = intent.getStringExtra("intent_nama")
         tvHargaMenu.text = intent.getStringExtra("intent_harga")
 
+            BtnCart.setOnClickListener {
+                val Intent = Intent(this, ViewCart::class.java)
+                startActivity(Intent)
+            }
         btnKirim.setOnClickListener {
             addCart()
         }
+
     }
 
     private fun addCart() {

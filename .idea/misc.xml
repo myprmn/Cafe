@@ -3,9 +3,13 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/PC-05/AndroidStudioProjects/Cafe/app/src/main/res/drawable/delete.xml" value="0.319" />
         <entry key="..\:/Users/PC-05/AndroidStudioProjects/Cafe/app/src/main/res/drawable/resto.xml" value="0.154" />
         <entry key="..\:/Users/PC-05/AndroidStudioProjects/Cafe/app/src/main/res/layout/activity_main.xml" value="0.25" />
         <entry key="..\:/Users/PC-05/AndroidStudioProjects/Cafe/app/src/main/res/layout/activity_order.xml" value="0.33" />
+        <entry key="..\:/Users/PC-05/AndroidStudioProjects/Cafe/app/src/main/res/layout/activity_view_cart.xml" value="0.33" />
+        <entry key="..\:/Users/PC-05/AndroidStudioProjects/Cafe/app/src/main/res/layout/bill.xml" value="0.19166666666666668" />
+        <entry key="..\:/Users/PC-05/AndroidStudioProjects/Cafe/app/src/main/res/layout/list_cart.xml" value="0.33" />
         <entry key="..\:/Users/PC-05/AndroidStudioProjects/Cafe/app/src/main/res/layout/list_menu.xml" value="0.33" />
       </map>
     </option>

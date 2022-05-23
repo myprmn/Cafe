@@ -8,6 +8,7 @@ import com.bumptech.glide.Glide
 import kotlinx.android.synthetic.main.list_menu.view.*
 
 class MenuAdapter (
+
     var results: ArrayList<MenuModel.Result>,
     val listener: OnAdapterListener):
     RecyclerView.Adapter<MenuAdapter.MyViewHolder>(){

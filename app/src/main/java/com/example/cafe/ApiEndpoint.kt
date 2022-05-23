@@ -18,4 +18,7 @@ interface ApiEndpoint {
     fun addCart (@Field("nomor_meja") nomor_meja:String,
                  @Field("menu_id") menu_id:Int,
                 @Field("jumlah_order") jumlah_order:Int): Call<ResponseModel>
+
+    @GET("myAPI.php?menu=getAllCart")
+    fun getAllCart(): Call<CartModel>
 }
