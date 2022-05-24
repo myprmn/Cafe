@@ -29,11 +29,11 @@ class ViewCart : AppCompatActivity() {
             override fun onClick(result: CartModel.Result) {
                 startActivity(
                     Intent(this@ViewCart, ViewCart::class.java)
-                        .putExtra("intent_nomor_meja", result.nomor_meja)
-                        .putExtra("intent_nama", result.nama)
-                        .putExtra("intent_harga", "Rp. ${result.harga.toString()}")
-                        .putExtra("intent_jumlah_order", result.jumlah_order)
-                        .putExtra("intent_jumlah_harga", "Rp. ${result.jumlah_harga.toString()}")
+//                        .putExtra("intent_nomor_meja", result.nomor_meja)
+//                        .putExtra("intent_nama", result.nama)
+//                        .putExtra("intent_harga", "Rp. ${result.harga.toString()}")
+//                        .putExtra("intent_jumlah_order", result.jumlah_order)
+//                        .putExtra("intent_jumlah_harga", "Rp. ${result.jumlah_harga.toString()}")
                 )
             }
         })

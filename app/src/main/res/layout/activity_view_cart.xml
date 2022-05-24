@@ -18,43 +18,44 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:layout_margin="5dp">
+        android:layout_margin="3dp">
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:layout_marginLeft="5dp"
-            android:text="No. Meja"
+            android:layout_marginRight="25dp"
+            android:text="Meja"
             android:textStyle="bold"
             android:textSize="15sp"/>
+
         <TextView
 
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_marginLeft="5dp"
-            android:text="Menu"/>
+            android:text="Menu" />
         <TextView
 
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:layout_marginLeft="15dp"
-            android:layout_marginRight="15dp"
+            android:layout_marginLeft="45dp"
+            android:layout_marginRight="25dp"
             android:text="Harga"/>
         <TextView
 
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:layout_marginLeft="5dp"
-            android:text="Jumlah Order"/>
+            android:layout_marginLeft="10dp"
+            android:text="Order"/>
         <TextView
 
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:layout_marginLeft="5dp"
-            android:text="Jumlah Harga"
+            android:layout_marginLeft="35dp"
+            android:text="Jumlah"
             android:layout_marginRight="5dp"/>
     </LinearLayout>
     <LinearLayout
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_margin="5dp">
     <androidx.recyclerview.widget.RecyclerView
